@@ -10,6 +10,7 @@ import com.group.nugraha.matchschedulekotlin.Presenter.FirstPresenter
 import com.group.nugraha.matchschedulekotlin.View.FirstView
 import com.group.nugraha.matchschedulekotlin.adapter.FirstAdapter
 import com.group.nugraha.matchschedulekotlin.api.ApiRepository
+import com.group.nugraha.matchschedulekotlin.detail.DetailFirstActivity
 import com.group.nugraha.matchschedulekotlin.model.ResultTeam
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
@@ -36,7 +37,7 @@ class FirstActivity : AppCompatActivity(), FirstView {
         }
 
         adapterik = FirstAdapter(resultteams){
-
+            startActivity<DetailFirstActivity>()
         }
 
         resultlistTeam.adapter = adapterik
