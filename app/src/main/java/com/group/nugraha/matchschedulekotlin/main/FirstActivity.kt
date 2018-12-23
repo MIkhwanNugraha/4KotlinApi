@@ -24,7 +24,6 @@ class FirstActivity : AppCompatActivity() {
                 lparams(matchParent, wrapContent)
                 layoutManager = LinearLayoutManager(context)
             }
-//sampai meulah adapter...23 des 01.35 pm
         }
 
 
