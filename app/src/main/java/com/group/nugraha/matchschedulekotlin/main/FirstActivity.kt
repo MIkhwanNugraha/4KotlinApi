@@ -1,15 +1,13 @@
-package com.group.nugraha.matchschedulekotlin
+package com.group.nugraha.matchschedulekotlin.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 
 class FirstActivity : AppCompatActivity() {
-    private var name: String = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val inte = intent
-        name = inte.getStringExtra("key")
 
     }
 }

@@ -1,10 +1,9 @@
-package com.group.nugraha.matchschedulekotlin
+package com.group.nugraha.matchschedulekotlin.main
 
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
-import android.widget.LinearLayout
 import com.group.nugraha.matchschedulekotlin.R.color.colorAccent
 import org.jetbrains.anko.*
 
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                     backgroundColor = ContextCompat.getColor(context,colorAccent)
                     textColor = Color.WHITE
                     setOnClickListener {
-                        startActivity<FirstActivity>("key" to it)
+                        startActivity<FirstActivity>()
                     }
                 }.lparams(matchParent){
                     topMargin = dip(5)
@@ -34,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                     backgroundColor = ContextCompat.getColor(context,colorAccent)
                     textColor = Color.WHITE
                     setOnClickListener {
-                        startActivity<SecondActivity>("key2" to it)
+                        startActivity<SecondActivity>()
                     }
                 }.lparams(matchParent){
                     topMargin = dip(5)
